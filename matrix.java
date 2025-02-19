@@ -10,19 +10,19 @@ public class matrix
         int c= in.nextInt();
         int [][] Matrix= new int [r][c];
         System.out.print("Enter the elements");
-        for(int i=0;i<3;i++)
+        for(int i=0;i<r;i++)
         {
-            for(int j=0;j<3;j++)
+            for(int j=0;j<c;j++)
             {
                 Matrix[i][j]=in.nextInt();
             }
         }
         System.out.println("The Matrix:");
-        for(int i=0;i<3;i++)
+        for(int i=0;i<r;i++)
         {
-            for(int j=0;j<3;j++)
+            for(int j=0;j<c;j++)
             {
-                System.out.print(Matrix[i][j]+" ");
+                System.out.print(Matrix[i][j]+"  ");
             }
             System.out.println();
         }
