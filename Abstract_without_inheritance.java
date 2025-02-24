@@ -1,9 +1,7 @@
 import java.util.Scanner;
 abstract class Abstract_without_inheritance
 {
-    static float r;
-    static float area;
-    static float circum;
+    static float r,area,circum;
     static void get()
     {
        Scanner in = new Scanner(System.in);
