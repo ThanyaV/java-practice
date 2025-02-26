@@ -44,11 +44,7 @@ class prime extends Calculate
     static void calc()
     {
        int x, y, flg;
-
-        System.out.print(
-            "All the Prime numbers within "+a+" and " + n
-            + " are = ");
-
+        System.out.print( "Prime number = ");
         for (x = 2; x <= n; x++) 
         {
             flg = 1;
