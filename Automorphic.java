@@ -1,53 +1,57 @@
-import java.util.Scanner;
-class Automorphic
-{
-    static void c()
+import java.util.*;
+
+class overload {
+    public void automorphic(int x) 
     {
-        Scanner in=new Scanner(System.in);
-        System.out.print("Enter the value of n:");
-        int n=in.nextInt();
-        System.out.println();
-        int multi=n*n;
-        int x=n*n;
-        System.out.println(""+x);
-        System.out.println();
-        if(n<10)
-        {
-            if(n==multi%10)
-            {
-                System.out.println(n+" is Automorphic");
-            }
-            else
-            {
-              System.out.println(n+" is not Automorphic");  
-            }
-            
-        }
-        else
-        {
-            if(n%10==multi%10)
-            {
-                System.out.println(n+" is Automorphic");
-            }
-            else
-            {
-              System.out.println(n+" is Automorphic") ; 
-            }
-            
-        }
         
+        int x1 = x;
+        int x2=x;
+        int multi = x * x;
+        int digit = 1;
+        int count=0;
+        if (x < 10) {
+            if (x == multi % 10) {
+                System.out.println(x  );
+            } 
+        } else {
+            do {
+               digit++;
+               x1=x1/10;
+            } while (x1/10 > 0);
+           for(int i=0;i<digit;i++)
+           {
+               if(multi%10==x2%10)
+               {
+                   count++;
+                   multi=multi/10;
+                   x2=x2/10;
+               }
+               else
+               {
+                   break;
+               }
+           }
+           if(count==digit)
+           {
+               System.out.println(x );
+           }
+          
+        }
     }
-    public static void main(String [] arg)
+    public void range(int x,int y)
     {
-        c();
+       for(int i=x;i<=y;i++)
+       {
+          automorphic(i); 
+       }
     }
 }
 
 
-
-
-
-
-
-
-
+public class Automorphic {
+    public static void main(String[] args) {
+        overload o = new overload();
+        o.range(1,1000);
+        
+    }
+}
