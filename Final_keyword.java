@@ -9,38 +9,45 @@ class Shapes
 class square extends Shapes
 {
     final int a=5;
-    public int areasq;
+    public int area;
     public void sq()
     {
-        areasq=a*a;
+        System.out.println("SQUARE");
+        System.out.println();
+        area=a*a;
         System.out.println("side = "+a);
-        System.out.println("Area of Square = "+areasq);
+        System.out.println("Area of Square = "+area);
         System.out.println();
     }
 }
 class rectangle extends Shapes
 {
     final int l=5,b=6;
-    public int areare;
+    public int area;
     public void re()
     {
-        areare=l*b;
+         System.out.println("RECTANGLE");
+         System.out.println();
+        area=l*b;
         System.out.println("length = "+l);
         System.out.println("breath = "+b);
-        System.out.println("Area of rectangle = "+areare);
+        System.out.println("Area of rectangle = "+area);
         System.out.println();
     }
 }
 class triangle extends Shapes
 {
+     
     final int l=3,b=5;
-    public float areatr;
+    public float area;
     public void tr()
     {
-        areatr=0.5f*l*b;
+        System.out.println("TRIANGLE");
+        System.out.println();
+        area=0.5f*l*b;
          System.out.println("length = "+l);
         System.out.println("breath = "+b);
-        System.out.println("Area of triangle = "+areatr);
+        System.out.println("Area of triangle = "+area);
         System.out.println();
         
     }
@@ -48,12 +55,14 @@ class triangle extends Shapes
 class circle extends Shapes
 {
     final int r=7;
-    public float areaci;
+    public float area;
     public void ci()
     {
-        areaci=3.14f*r*r;
+         System.out.println("CIRCLE");
+         System.out.println();
+        area=3.14f*r*r;
         System.out.println("Radius = "+r);
-        System.out.println("Area of circle = "+areaci);
+        System.out.println("Area of circle = "+area);
         System.out.println();
     }
 }
